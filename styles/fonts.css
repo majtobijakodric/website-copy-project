@@ -1,0 +1,29 @@
+@font-face {
+    font-family: mixUITiltle;
+    src: url("https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: mixUIBold;
+    src: url("https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: mixUIRegular;
+    src: url("https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: CircularSpotifyBlack;
+    src: url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: CircularSpotifyBold;
+    src: url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: CircularSpotifyBook;
+    src: url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Book.woff2") format("woff2");
+}
