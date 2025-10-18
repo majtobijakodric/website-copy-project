@@ -3,14 +3,15 @@
 
 <head>
     <title>Spotify</title>
+    <meta charset="UTF-8">
     <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
-    <div class="ceter-div">
-        <!-- svg ikona spotifyja -->
-        <svg role="img" viewBox="0 0 24 24" class="e-91132-logo e-91132-baseline" aria-label="Spotify"
+    <div id="main-div">
+        <!-- svg Spotify icon -->
+        <svg id="top-logo" role="img" viewBox="0 0 24 24" class="e-91132-logo e-91132-baseline" aria-label="Spotify"
             aria-hidden="false" style="--encore-logo-fill-color:var(--decorative-base)" height="100%"
             data-encore-id="logoSpotify">
             <title>Spotify</title>
@@ -19,21 +20,21 @@
                 transform="translate(-0.95,0)"></path>
         </svg>
 
-        <h1>Welcome back</h1>
+        <h1 class="whiteTitle">Welcome back</h1>
 
         <form action="" method="get">
             <label for="username">Email or username</label>
             <!-- email/username input -->
             <input type="text" id="email-username" name="username">
 
-            <!-- gumb -->
+            <!-- button -->
             <button type="sumbit"><span>Continue</span></button>
         </form>
 
         <p>or</p>
 
-        <!-- prijava z Googlom, Facebookom, Applom -->
-        <div class="">
+        <!-- login with Google, Facebook, Apple -->
+        <div class="dif-logins">
 
             <!-- Google -->
             <a href="">
@@ -64,7 +65,6 @@
                         fill="#1877F2"></path>
                 </svg>
                 <span>Continue with Facebook</span>
-
             </a>
 
             <!-- Apple -->
@@ -86,18 +86,20 @@
                 </a>
             </div>
 
-            <div>
-                <p>This site is protected by reCAPTCHA and the Google
-                    <a href="">Privacy</a> Policy and <a href="">Terms
-                        of Service</a>
-                    apply.
-                </p>
-            </div>
         </div>
-
-
-
     </div>
+
+    <footer>
+        <div>
+            <p>This site is protected by reCAPTCHA and the Google
+                <a class="footer-links" href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
+                and <a class="footer-links" href="https://policies.google.com/terms" target="_blank">Terms
+                    of Service</a>
+                apply.
+            </p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
