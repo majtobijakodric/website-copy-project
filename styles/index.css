@@ -38,13 +38,6 @@ h1 {
     fill: white;
 }
 
-.dif-logins a {
-    display: block;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 7px;
-    width: 300px;
-}
 
 footer {
     position: absolute;
@@ -69,6 +62,10 @@ footer {
     max-width: 330px;
     width: 100%;
     margin: 0 auto;
+}
+
+.footer-links a:hover {
+    color: #1ED760;
 }
 
 .form-div {
@@ -108,7 +105,7 @@ footer {
     height: 48px;
     box-sizing: border-box;
     font-size: 16px;
-    transition: transform 0.1s ease;
+    transition: transform 0.05s ease;
 }
 
 .continue-button:hover {
@@ -120,4 +117,68 @@ footer {
     text-align: center;
     padding: 16px 0px 16px;
     font-size: 16px;
+}
+
+.dif-logins {
+    width: 100%;
+}
+
+.dif-logins a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgba(245, 245, 245, 0.435);
+    border-radius: 30px;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 48px;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.05s ease, border-color 0.05s ease;
+}
+
+.dif-logins a:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
+.dif-logins a svg {
+    position: absolute;
+    left: 24px;
+}
+
+#sign-up-div {
+    text-align: center;
+    margin-top: 56px;
+    width: 100%;
+
+}
+
+#no-acc {
+    font-size: 16px;
+    color: #b3b3b3;
+    text-align: center;
+    font-weight: 100;
+}
+
+.spacer-div {
+    margin-top: 16px;
+}
+
+.sign-up {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.05s ease;
+}
+
+.sign-up:hover {
+    transform: scale(1.02);
 }
