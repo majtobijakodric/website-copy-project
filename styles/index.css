@@ -18,7 +18,17 @@ body {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    width: 300px;
+    width: 350px;
+    margin-top: 104px;
+}
+
+h1 {
+    margin-top: 12px;
+    font-family: mixUITiltle;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 760;
+    margin-bottom: 30px;
 }
 
 #top-logo {
@@ -27,20 +37,33 @@ body {
     fill: white;
 }
 
-.whiteTitle {
-    color: white;
+#dif-logins {
+    display: inline;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-div {
+    justify-content: center;
+    text-align: center;
+    width: 400px;
 }
 
 .footer-links {
     font-family: mixUIRegular;
     font-size: 12px;
     color: #b3b3b3;
-
-}
-
-footer {
-    color: #b3b3b3;
-    align-items: center;
     text-align: center;
-    width: 400px;
+    max-width: 330px;
+    width: 100%;
+    margin: 0 auto;
 }
