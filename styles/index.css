@@ -1,5 +1,12 @@
 @import url(fonts.css);
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -82,17 +89,30 @@ footer {
 
 .input-div {
     display: block;
+    box-sizing: border-box;
     width: 100%;
     height: 48px;
     padding: 12px;
     border: 1px solid #d5c7c7a8;
     border-radius: 5px;
     background-color: #121212;
-    box-sizing: border-box;
     color: white;
     font-size: 16px;
 }
 
+.input-div:hover {
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid white;
+}
+
+.input-div:focus {
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid white;
+    padding: 11px;
+
+}
 
 .continue-button {
     display: block;
@@ -101,7 +121,7 @@ footer {
     border-radius: 25px;
     background-color: #1ED760;
     padding: 8px 32px;
-    font-weight: bolder;
+    font-weight: 800;
     height: 48px;
     box-sizing: border-box;
     font-size: 16px;
@@ -139,7 +159,8 @@ footer {
     font-weight: bold;
     text-align: center;
     padding: 10px;
-    transition: transform 0.05s ease, border-color 0.05s ease;
+    transition: transform 0.09s ease, border-color 0.05s ease;
+
 }
 
 .dif-logins a:hover {
@@ -177,6 +198,7 @@ footer {
     text-align: center;
     font-weight: bold;
     transition: transform 0.05s ease;
+
 }
 
 .sign-up:hover {
