@@ -1,0 +1,6 @@
+.email-field::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: mixUIRegular;
+    color: rgb(182, 176, 176);
+}
