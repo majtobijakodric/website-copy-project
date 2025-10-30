@@ -18,7 +18,8 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 #main-div {
@@ -28,6 +29,7 @@ body {
     margin: auto;
     width: 324px;
     margin-top: 104px;
+    min-height: 800px;
 }
 
 
@@ -48,9 +50,8 @@ h1 {
 
 
 footer {
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 32px;
+    margin-top: auto;
+    padding: 32px 0;
     width: 100%;
     display: flex;
     justify-content: center;
