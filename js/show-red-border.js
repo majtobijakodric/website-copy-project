@@ -5,6 +5,5 @@ const input = document.querySelector('.input-div');
 // The 'blur' event fires when the element loses focus (user clicks away or tabs out)
 input.addEventListener('blur', () => {
     // Add the CSS class 'touched' to the input element
-    // This typically triggers styling changes defined in CSS for the .touched class
     input.classList.add('touched');
 });

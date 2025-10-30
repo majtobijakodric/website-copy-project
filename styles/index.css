@@ -119,7 +119,7 @@ Currently no element has the .touched class because a JavaScript script adds it
 when an input field is clicked and then clicked out of. */
 
 .input-div.touched:invalid {
-    border-color: red;
+    border-color: rgb(216, 54, 54);
 }
 
 .continue-button {
@@ -134,9 +134,10 @@ when an input field is clicked and then clicked out of. */
     box-sizing: border-box;
     font-size: 16px;
     transition: transform 0.05s ease;
+    cursor: pointer;
 }
 
-.continue-button:hover {
+.scale.continue-button:hover {
     transform: scale(1.05);
     background-color: #2de36d;
 }
@@ -167,11 +168,10 @@ when an input field is clicked and then clicked out of. */
     color: white;
     font-weight: bold;
     padding: 10px;
-    transition: transform 0.09s ease, border-color 0.05s ease;
-
+    transition: transform 0.09s ease, border-color 0.3s ease;
 }
 
-.dif-logins a:hover {
+.scale.dif-logins a:hover {
     transform: scale(1.05);
     border-color: white;
 }
@@ -205,10 +205,9 @@ when an input field is clicked and then clicked out of. */
     color: white;
     text-align: center;
     font-weight: bold;
-    transition: transform 0.05s ease;
-
+    transition: all 0.05s ease;
 }
 
-.sign-up:hover {
+.scale.sign-up:hover {
     transform: scale(1.02);
 }

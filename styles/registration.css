@@ -1,6 +1,44 @@
+@import url(fonts.css);
+
 .email-field::placeholder {
     font-size: 16px;
     font-weight: 500;
     font-family: mixUIRegular;
     color: rgb(182, 176, 176);
+}
+
+.continue-button:hover {
+    background-color: #2de36d;
+}
+
+.dif-logins a {
+    transition: border-color 1.5s ease;
+}
+
+.dif-logins a:hover {
+    border-color: white;
+}
+
+.input-div.touched.warning:invalid {
+    border-color: rgb(216, 54, 54);
+}
+
+.hidden {
+    display: none;
+}
+
+.warning {
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #f3727f;
+    font-size: 13px;
+    font-family: mixUIRegular;
+}
+
+.warning svg {
+    width: 20px;
+    margin: 2px 4px 0px 0px;
+    fill: #f3727f;
 }
