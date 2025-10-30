@@ -112,7 +112,14 @@ footer {
     outline: none;
     border: 2px solid white;
     padding: 11px;
+}
 
+/* Targets the element that has both .input-div and .touched to give it a red border.
+Currently no element has the .touched class because a JavaScript script adds it
+when an input field is clicked and then clicked out of. */
+
+.input-div.touched:invalid {
+    border-color: red;
 }
 
 .continue-button {

@@ -26,9 +26,11 @@
         <form action="" method="get">
             <div class="form-div">
                 <label class="label-div" for="username">Email or username</label>
-                <input class="input-div" type="text" id="email-username" name="username">
+                <input class="input-div" type="text" id="email-username"
+                    pattern="(^[A-Za-z0-9_]{3,16}$)|(^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$)" required
+                    name="username">
             </div>
-            <button type="sumbit" class="continue-button"><span><b>Continue</b></span></button>
+            <button type="submit" class="continue-button"><span><b>Continue</b></span></button>
         </form>
 
         <p class="or-div">or</p>
@@ -103,6 +105,7 @@
         </div>
     </footer>
 
+    <script src="js/show-red-border.js"></script>
 </body>
 
 </html>
