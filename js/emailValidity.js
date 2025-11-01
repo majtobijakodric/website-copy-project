@@ -20,3 +20,4 @@ input.addEventListener('input', () => {
         input2.classList.remove('warning');
     }
 });
+
