@@ -1,0 +1,136 @@
+#progress-bar {
+    width: 436px;
+    height: 2px;
+    background-color: #7c7c7c;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+#green-progress {
+    width: 33.3%;
+    height: 100%;
+    background-color: #1ED760;
+    transition: width 0.3s ease;
+}
+
+.input-with-icons {
+    position: relative;
+}
+
+.input-with-icons .input-div {
+    padding-right: 44px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    fill: #b3b3b3;
+    cursor: pointer;
+    transition: all 0.05s ease;
+}
+
+.password-toggle:hover {
+    fill: #ffffff;
+    transform: translateY(-50%) scale(1.05);
+    transform-origin: center;
+}
+
+.spacer-div {
+    margin-top: 45px;
+}
+
+.spacer-div1 {
+    margin-top: 45px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.small-svg {
+    fill: #1ED760;
+    height: 12px;
+    width: 12px;
+}
+
+.text {
+    padding-left: 8px;
+    font-size: 14px;
+    font-family: mixUIRegular;
+}
+
+.label {
+    display: block;
+    font-size: 14px;
+    font-family: mixUIRegular;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+/* Progress */
+.progress {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    height: 80px;
+    width: 436px;
+    box-sizing: border-box;
+    margin-top: -20px;
+}
+
+.progress .arrow {
+    height: 100%;
+    display: flex;
+}
+
+.progress .arrow button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.progress .arrow button svg {
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    fill: #7c7c7c;
+    transition: scale 0.05s ease;
+}
+
+.progress .arrow button:hover svg {
+    width: 24px;
+    scale: 1.06;
+    fill: rgb(184, 179, 179);
+}
+
+#step-task-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+}
+
+
+#step {
+    font-size: 16px;
+    color: #b3b3b3;
+    font-family: mixUIRegular;
+    margin-bottom: 4px;
+}
+
+#task {
+    font-size: 16px;
+    font-family: mixUIRegular;
+    font-weight: bold;
+}
+
+/* Progress end */
