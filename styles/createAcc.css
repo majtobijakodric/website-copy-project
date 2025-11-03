@@ -97,7 +97,7 @@ ul {
     padding: 16px;
 }
 
-.progress .arrow button svg {
+.progress .arrow button a svg {
     justify-content: center;
     align-items: center;
     width: 24px;
@@ -105,7 +105,7 @@ ul {
     transition: scale 0.05s ease;
 }
 
-.progress .arrow button:hover svg {
+.progress .arrow button:hover a svg {
     width: 24px;
     scale: 1.06;
     fill: rgb(184, 179, 179);
