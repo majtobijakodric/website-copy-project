@@ -4,7 +4,6 @@
     background-color: #7c7c7c;
     border-radius: 2px;
     overflow: hidden;
-    margin-bottom: 22px;
 }
 
 #green-progress {
@@ -48,10 +47,18 @@
     margin-top: 45px;
 }
 
+.spacer-div2 {
+    margin-top: 16px;
+}
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.li-password {
+    padding-bottom: 5px;
 }
 
 .small-svg {
@@ -82,7 +89,6 @@ ul {
     height: 80px;
     width: 436px;
     box-sizing: border-box;
-    margin-top: -20px;
 }
 
 .progress .arrow {

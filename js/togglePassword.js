@@ -1,39 +1,40 @@
-// Get the password input and toggle icons
-const passwordInput = document.getElementById('password');
-const showIcon = document.querySelector('.password-toggle.show'); // open eye
-const hideIcon = document.querySelector('.password-toggle.hide'); // crossed eye
+// togglePassword.js
 
-// Only run if all elements exist
-if (passwordInput && showIcon && hideIcon) {
-    /**
-     * Toggle between showing and hiding the password
-     */
-    function togglePassword() {
-        if (passwordInput.type === 'password') {
-            // Show password as plain text
-            passwordInput.type = 'text';
-            // Display open eye icon
-            showIcon.classList.remove('hidden');
-            // Hide crossed eye icon
-            hideIcon.classList.add('hidden');
-        } else {
-            // Hide password (show as dots)
-            passwordInput.type = 'password';
-            // Hide open eye icon
-            showIcon.classList.add('hidden');
-            // Display crossed eye icon
-            hideIcon.classList.remove('hidden');
-        }
+function initTogglePassword() {
+    const passwordInput = document.getElementById('password');
+    const showIcon = document.querySelector('.password-toggle.show');
+    const hideIcon = document.querySelector('.password-toggle.hide');
+
+    // If these elements don't exist, don't do anything.
+    if (!passwordInput || !showIcon || !hideIcon) return;
+
+    // Avoid double-initialisation if this gets called more than once
+    if (passwordInput.dataset.toggleInitialized === 'true') {
+        return;
     }
+    passwordInput.dataset.toggleInitialized = 'true';
 
-    // Set initial state: password hidden
-    passwordInput.type = 'password';
-    // Hide the open eye icon initially
-    showIcon.classList.add('hidden');
-    // Show the crossed eye icon initially
-    hideIcon.classList.remove('hidden');
+    const setState = (visible) => {
+        passwordInput.type = visible ? 'text' : 'password';
+        // visible = password visible → showIcon (open eye) visible, hideIcon (slashed) visible or vice versa?
+        // I'll use: visible=true → slashed-eye icon visible (click to hide), open-eye hidden.
+        showIcon.classList.toggle('hidden', visible);   // open eye visible when password hidden
+        hideIcon.classList.toggle('hidden', !visible);  // slashed eye visible when password visible
+    };
 
-    // Add click handlers to both icons to toggle password visibility
-    showIcon.addEventListener('click', togglePassword);
-    hideIcon.addEventListener('click', togglePassword);
+    // Initial state: password hidden
+    setState(false);
+
+    // Click open-eye → show password
+    showIcon.addEventListener('click', () => setState(true));
+
+    // Click slashed-eye → hide password
+    hideIcon.addEventListener('click', () => setState(false));
 }
+
+// Make it callable from other scripts (like openNewPage.js)
+window.initTogglePassword = initTogglePassword;
+
+// If this file is included directly on a page that already
+// has the password field (e.g. when opening registration-password.html directly):
+document.addEventListener('DOMContentLoaded', initTogglePassword);
