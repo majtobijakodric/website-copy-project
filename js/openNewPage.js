@@ -1,5 +1,3 @@
-// openNewPage.js
-
 const form = document.querySelector('form');
 const emailInput = document.getElementById('email');
 
@@ -27,8 +25,8 @@ form.addEventListener('submit', async (e) => {
         window.initTogglePassword();
     }
 
-    // If you later have a similar init for password rules, call it here:
-    // if (window.initPasswordValidity) {
-    //   window.initPasswordValidity();
-    // }
+    // NEW: re-init password validation
+    if (window.initPasswordValidation) {
+        window.initPasswordValidation();
+    }
 });

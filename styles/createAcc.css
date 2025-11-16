@@ -140,3 +140,11 @@ ul {
 }
 
 /* Progress end */
+
+.is-red {
+    color: #F3727f !important;
+}
+
+.input-div.touched {
+    border-color: rgb(216, 54, 54);
+}
