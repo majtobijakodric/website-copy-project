@@ -29,4 +29,9 @@ form.addEventListener('submit', async (e) => {
     if (window.initPasswordValidation) {
         window.initPasswordValidation();
     }
+    // NEW: re-init NextStep validation
+
+    if (window.initNextStep) {
+        window.initNextStep();
+    }
 });

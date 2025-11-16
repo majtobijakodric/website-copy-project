@@ -77,4 +77,7 @@ window.initPasswordValidation = function () {
             passwordInput.classList.remove("touched");
         }
     });
+
+
+
 };

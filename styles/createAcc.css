@@ -148,3 +148,67 @@ ul {
 .input-div.touched {
     border-color: rgb(216, 54, 54);
 }
+
+.label-small {
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.dob-inputs {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 8px;
+}
+
+.div-day {
+    max-width: 60px;
+}
+
+.div-day input {
+    width: 60px;
+    box-sizing: border-box;
+}
+
+.div-month {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.div-month select {
+    min-width: 158px;
+}
+
+/* Make the select fill the .div-month space */
+.div-month select.input-div {
+    width: 100%;
+}
+
+.arrow-down-menu {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    fill: #b3b3b3;
+    height: 24px;
+}
+
+.remove-defaut-arrow {
+    /* default arrow remove */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: none;
+    padding-right: 30px;
+}
+
+.gray-link {
+    color: #c5c4c4;
+}
+
+.label-div {
+    padding-bottom: 4px;
+}
