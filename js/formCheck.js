@@ -243,6 +243,17 @@ function initFormCheck() {
             return;
         }
 
+
+        Swal.fire({
+            background: "#201f1fff",
+            icon: "success",
+            title: "Registration successful",
+            color: "white",
+            confirmButtonColor: "#1DB954"
+        }).then(() => {
+            window.location.href = "login.html";
+        });
+
         // All fields are valid → go to step 3
         secondPart.classList.add("hidden");
         if (thirdPart) {
@@ -250,10 +261,10 @@ function initFormCheck() {
         }
 
         if (stepText) {
-            stepText.textContent = "Step 3 of 3";
+            stepText.textContent = "";
         }
         if (taskText) {
-            taskText.textContent = "Review your details";
+            taskText.textContent = "Your account is registerd";
         }
         if (progressBar) {
             progressBar.style.width = "100%";

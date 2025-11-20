@@ -38,4 +38,8 @@ form.addEventListener('submit', async (e) => {
     if (window.initFormCheck) {
         window.initFormCheck();
     }
+
+    if (window.initRegistrationAlert) {
+        window.initRegistrationAlert();
+    }
 });
