@@ -34,4 +34,8 @@ form.addEventListener('submit', async (e) => {
     if (window.initNextStep) {
         window.initNextStep();
     }
+
+    if (window.initFormCheck) {
+        window.initFormCheck();
+    }
 });
