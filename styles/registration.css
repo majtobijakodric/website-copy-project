@@ -66,3 +66,11 @@ select option {
     background-color: black;
     color: white;
 }
+
+.button-spacer {
+    margin-top: 20px;
+}
+
+.warning-spacer {
+    padding: 20px;
+}

@@ -141,6 +141,12 @@ when an input field is clicked and then clicked out of. */
     background-color: #2de36d;
 }
 
+.continue-button:active {
+    background-color: #20b659;
+    border-color: #108c3f;
+    transform: scale(0.97);
+}
+
 .or-div {
     width: 100%;
     text-align: center;
