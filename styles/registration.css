@@ -43,3 +43,26 @@
     margin: 2px 4px 0px 0px;
     fill: #f3727f;
 }
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+select {
+    background-color: black;
+    color: white;           /* text color */
+    border: 1px solid #444;
+}
+
+select option {
+    background-color: black;
+    color: white;
+}
