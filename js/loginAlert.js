@@ -1,6 +1,6 @@
 // Select the <form> element on the page and add an event listener for the "submit" event
 const usernames = ["maj", "nik", "bacar", "maj@gmail.com", "nik@gmail.com"];
-const passwords = ["123", "123", "123", "123", "123"];
+const passwords = ["123", "Lovro12345!", "123", "123", "123"];
 
 document.querySelector("form").addEventListener("submit", function (e) {
 
