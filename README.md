@@ -1,16 +1,28 @@
 ## Spotify Web Experience Clone
 
-This project recreates Spotify's multi-step account creation flow and login experience using vanilla HTML, CSS, and JavaScript. It focuses on styling fidelity as well as interactive behaviors such as inline validation, password visibility toggles, and contextual warnings.
+A pixel-close recreation of Spotify's marketing splash page, login flow, and three-step account creation funnel. The project is entirely static (HTML, CSS, JavaScript) yet captures the feel of the official site, including inline validation, progressive disclosure of form steps, and contextual warnings.
+
+### Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Setup and Usage](#setup-and-usage)
+- [Key Scripts](#key-scripts)
+- [Styling Notes](#styling-notes)
+- [Future Improvements](#future-improvements)
+- [License](#license)
 
 ### Features
-- **Landing and Auth Pages** – `index.html` mirrors the Spotify marketing splash screen, while `sites/login.html`, `sites/registration.html`, and `sites/registration-password.html` reproduce the authentication flow.
-- **Form Validation Feedback** – Custom scripts (`js/emailValidity.js`, `js/passwordValidity.js`, `js/usernameValidity.js`) add blur/input listeners, toggle warning states, and surface requirement indicators without third-party libraries.
-- **Password UX Enhancements** – Password requirement checklist, real-time rule tracking, and show/hide toggles mimic the official Spotify onboarding experience.
-- **Progressive Registration Flow** – Separate sections inside `registration-password.html` guide the user through password creation, profile info, and demographic inputs with visual progress indicators.
-- **Responsive Styling** – Modular stylesheets (`styles/index.css`, `styles/login.css`, `styles/createAcc.css`, `styles/registration.css`, `styles/fonts.css`) keep layouts flexible across viewports.
+- **Landing + Auth Pages** – `index.html` mirrors the public marketing hero; `sites/login.html`, `sites/registration.html`, and `sites/registration-password.html` replicate the authentication views with matching typography and spacing.
+- **Interactive Validation** – Custom scripts add `blur` and `input` handlers that toggle `.touched`, `.hidden`, and `.warning` utility classes so errors appear instantly.
+- **Password Coach Marks** – The password step highlights requirements (letter, number/special char, minimum length) with live SVG swaps and red state text.
+- **Progress Indicators** – A progress bar plus “Step x of y” copy guide people through the registration funnel.
+- **Responsive Layouts** – Independent stylesheets for landing, login, creation, and shared fonts keep the UI adaptable across viewports without a framework.
+- **Navigation Helpers** – Lightweight helpers route users to the next step or open supporting pages without leaving the experience.
 
 ### Screenshots
-Screenshots live in the root `assets/` directory. Keep the filenames below (or update both the files and Markdown references) so they render correctly:
+Screenshots live in `assets/`. Update filenames or add more images as needed.
 
 ![Landing Page](assets/landing.png)
 ![Login Form](assets/login.png)
@@ -18,40 +30,82 @@ Screenshots live in the root `assets/` directory. Keep the filenames below (or u
 ![Registration Alternate Step](assets/registration-other.png)
 ![Password + Profile Step](assets/registration-password.png)
 
-> Tip: Drop new PNG/JPG captures into `assets/` and adjust these paths if you introduce different names or add more states.
-
 ### Tech Stack
-- HTML5 templates for structure
-- CSS3 (Flexbox, custom properties) for layout and branding
-- Vanilla JavaScript for DOM interactions and validation
+- HTML5 for structure and semantic layout
+- CSS3 (Flexbox, custom properties, animations) for styling
+- Vanilla JavaScript for form validation, alerts, and UI transitions
 
-### Getting Started
-1. **Clone the repo**
+### Project Structure
+```
+website-copy-project/
+├── index.html
+├── sites/
+│   ├── login.html
+│   ├── registration.html
+│   └── registration-password.html
+├── styles/
+│   ├── createAcc.css
+│   ├── fonts.css
+│   ├── index.css
+│   ├── login.css
+│   └── registration.css
+├── js/
+│   ├── emailValidity.js
+│   ├── formCheck.js
+│   ├── loginAlert.js
+│   ├── nextStep.js
+│   ├── openNewPage.js
+│   ├── passwordValidity.js
+│   ├── registrationAlert.js
+│   ├── togglePassword.js
+│   └── usernameValidity.js
+└── assets/
+	 ├── landing.png
+	 ├── login.png
+	 ├── registration.png
+	 ├── registration-other.png
+	 └── registration-password.png
+```
+
+### Setup and Usage
+1. **Clone the repository**
 	```bash
 	git clone https://github.com/majtobijakodric/website-copy-project.git
 	cd website-copy-project
 	```
-2. **Open locally** – Serve the root folder with any static server (e.g., VS Code Live Server, `python -m http.server`, or a simple file preview) to retain correct relative paths for assets and navigation between subpages.
-3. **Navigate pages** – Visit `index.html` for the landing page, then follow links/buttons to reach the login and registration flows under `sites/`.
+2. **Launch a static server** (pick one):
+	- VS Code Live Server extension
+	- Python: `python -m http.server 5173`
+	- Node: `npx serve .`
+	- Or open `index.html` directly in a browser (best results with a server to preserve relative links)
+3. **Explore the flow**:
+	- `index.html` → CTA buttons
+	- `sites/login.html` → email/password validation + password toggle
+	- `sites/registration.html` → email/username stage
+	- `sites/registration-password.html` → password coach marks → profile details → confirmation step
 
-### File/Folder Overview
-| Path | Purpose |
+### Key Scripts
+| Script | Responsibility |
 | --- | --- |
-| `index.html` | Landing page clone with hero messaging and call-to-actions |
-| `sites/login.html` | Login form replica with password toggles and alerts |
-| `sites/registration.html` | Initial registration step (email/username collection) |
-| `sites/registration-password.html` | Multi-step password + profile form with progress bar |
-| `styles/` | Page-specific styles plus shared fonts and layout helpers |
-| `js/` | Modular scripts for validation, alerts, and navigation helpers |
+| `emailValidity.js` | Applies `.touched` state, shows/hides warning helper text when emails fail native validation. |
+| `passwordValidity.js` | Evaluates password rules, swaps SVG indicators, and toggles outlines on invalid input. |
+| `usernameValidity.js` | Ensures username fields gain `.touched` styling after blur for consistent feedback. |
+| `togglePassword.js` | Switches password visibility icons and input type between `password` and `text`. |
+| `formCheck.js` / `registrationAlert.js` / `loginAlert.js` | Provides alert messaging and lightweight form submission handling for the clone experience. |
+| `nextStep.js` / `openNewPage.js` | Handles client-side navigation between steps/pages without a backend. |
 
-### Development Notes
-- Scripts are loaded per page to keep bundles lean. Ensure any new script tags are added to the relevant HTML file in `sites/` or the root.
-- Custom radio/checkbox styles rely on utility classes such as `.touched`, `.hidden`, `.warning`, so keep those definitions in sync between CSS files during refactors.
-- When extending validation logic, reuse the existing pattern: query the input, listen for `blur`/`input`, then toggle helper classes to drive the visual state.
+### Styling Notes
+- Shared utilities (color palette, fonts) live in `styles/fonts.css` and page-specific files import them in order within each HTML document.
+- Custom radio buttons and checkboxes rely on the `.touched`, `.warning`, `.hidden`, and `.gender-text` classes; keep these styles synchronized if new inputs are introduced.
+- SVG icons are inline to allow color overrides via CSS custom properties, matching Spotify’s theming.
 
 ### Future Improvements
-1. Hook the forms to a lightweight backend or mock API to persist submissions.
-2. Add automated tests (e.g., Playwright) to snapshot the UI and verify form validation flows.
-3. Introduce localization support for copy and accessibility improvements for screen readers.
+1. Wire up the forms to a mock API or backend to persist credentials and profile data.
+2. Add automated UI tests (Playwright/Cypress) to verify form validation, progress steps, and navigation.
+3. Expand accessibility support (ARIA descriptions, focus trapping on dialogs, keyboard shortcuts) to better match production-grade UX.
+4. Localize visible copy and validation messages for multiple languages.
+
+### License
+MIT License. See `LICENSE` for details.
 
 Feel free to fork, experiment, and submit pull requests if you spot opportunities to make the clone even closer to the real Spotify experience.
