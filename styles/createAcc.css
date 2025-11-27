@@ -225,6 +225,12 @@ ul {
     display: inline-block;
 }
 
+.div-gender label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .div-gender input[type="radio"]:checked {
     border-color: rgb(94, 221, 94);
     border-width: 4px;
@@ -253,7 +259,7 @@ ul {
 }
 
 .form-div-gender {
-    padding-top: 22px;
+    padding-top: 10px;
 }
 
 .gender-options {

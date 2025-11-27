@@ -58,7 +58,8 @@ input[type=number] {
 
 select {
     background-color: black;
-    color: white;           /* text color */
+    color: white;
+    /* text color */
     border: 1px solid #444;
 }
 
@@ -73,4 +74,21 @@ select option {
 
 .warning-spacer {
     padding: 20px;
+}
+
+.gender-text {
+    padding: 0;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    min-height: 16px;
+}
+
+.padding-left {
+    padding-left: 4px;
+}
+
+.spacer-div4 {
+    margin: 12px;
 }
