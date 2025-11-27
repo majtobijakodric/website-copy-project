@@ -22,20 +22,23 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 - **Navigation Helpers** – Lightweight helpers route users to the next step or open supporting pages without leaving the experience.
 
 ### Screenshots
-Screenshots live in `assets/`. Update filenames or add more images as needed.
 
 
 ![Landing Page](assets/landing.png)
 **Landing Page** – Browser security banner explaining the clone is safe to visit.
 
+
 ![Login Form](assets/login.png)
 **Login Form** – Email/username and password inputs with inline warning state.
+
 
 ![Registration Step](assets/registration.png)
 **Registration – Email** – Email verification step with validation hints.
 
+
 ![Password + Profile Step](assets/registration-password.png)
 **Registration – Password** – Password input.
+
 
 ![Registration Alternate Step](assets/registration-other.png)
 **Registration – Profile Info** – Username, date of birth, and gender selection.
