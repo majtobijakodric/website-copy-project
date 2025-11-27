@@ -24,20 +24,22 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 ### Screenshots
 Screenshots live in `assets/`. Update filenames or add more images as needed.
 
-**Landing Page** – hero layout with mirrored Spotify messaging, CTA buttons, and footer links.
+
 ![Landing Page](assets/landing.png)
+**Landing Page** – Browser security banner explaining the clone is safe to visit.
 
-**Login Form** – email/password inputs, warning banner, and toggle icons for password visibility.
 ![Login Form](assets/login.png)
+**Login Form** – Email/username and password inputs with inline warning state.
 
-**Registration Step** – email + username collection form with inline validation hints and warning blocks.
 ![Registration Step](assets/registration.png)
+**Registration – Email** – Email verification step with validation hints.
 
-**Registration Alternate Step** – variation of the registration UI showcasing alternative warning states.
-![Registration Alternate Step](assets/registration-other.png)
-
-**Password + Profile Step** – password checklist, profile fields, date picker, and gender radios with progress bar.
 ![Password + Profile Step](assets/registration-password.png)
+**Registration – Password** – Password input.
+
+![Registration Alternate Step](assets/registration-other.png)
+**Registration – Profile Info** – Username, date of birth, and gender selection.
+
 
 ### Tech Stack
 - HTML5 for structure and semantic layout
