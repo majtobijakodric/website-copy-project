@@ -24,10 +24,19 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 ### Screenshots
 Screenshots live in `assets/`. Update filenames or add more images as needed.
 
+**Landing Page** – hero layout with mirrored Spotify messaging, CTA buttons, and footer links.
 ![Landing Page](assets/landing.png)
+
+**Login Form** – email/password inputs, warning banner, and toggle icons for password visibility.
 ![Login Form](assets/login.png)
+
+**Registration Step** – email + username collection form with inline validation hints and warning blocks.
 ![Registration Step](assets/registration.png)
+
+**Registration Alternate Step** – variation of the registration UI showcasing alternative warning states.
 ![Registration Alternate Step](assets/registration-other.png)
+
+**Password + Profile Step** – password checklist, profile fields, date picker, and gender radios with progress bar.
 ![Password + Profile Step](assets/registration-password.png)
 
 ### Tech Stack
@@ -94,18 +103,6 @@ website-copy-project/
 | `formCheck.js` / `registrationAlert.js` / `loginAlert.js` | Provides alert messaging and lightweight form submission handling for the clone experience. |
 | `nextStep.js` / `openNewPage.js` | Handles client-side navigation between steps/pages without a backend. |
 
-### Styling Notes
-- Shared utilities (color palette, fonts) live in `styles/fonts.css` and page-specific files import them in order within each HTML document.
-- Custom radio buttons and checkboxes rely on the `.touched`, `.warning`, `.hidden`, and `.gender-text` classes; keep these styles synchronized if new inputs are introduced.
-- SVG icons are inline to allow color overrides via CSS custom properties, matching Spotify’s theming.
-
-### Future Improvements
-1. Wire up the forms to a mock API or backend to persist credentials and profile data.
-2. Add automated UI tests (Playwright/Cypress) to verify form validation, progress steps, and navigation.
-3. Expand accessibility support (ARIA descriptions, focus trapping on dialogs, keyboard shortcuts) to better match production-grade UX.
-4. Localize visible copy and validation messages for multiple languages.
-
 ### License
 MIT License. See `LICENSE` for details.
 
-Feel free to fork, experiment, and submit pull requests if you spot opportunities to make the clone even closer to the real Spotify experience.
