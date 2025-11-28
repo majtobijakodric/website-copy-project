@@ -98,16 +98,6 @@ website-copy-project/
 	- `sites/registration.html` → email/username stage
 	- `sites/registration-password.html` → password coach marks → profile details → confirmation step
 
-### Key Scripts
-| Script | Responsibility |
-| --- | --- |
-| `emailValidity.js` | Applies `.touched` state, shows/hides warning helper text when emails fail native validation. |
-| `passwordValidity.js` | Evaluates password rules, swaps SVG indicators, and toggles outlines on invalid input. |
-| `usernameValidity.js` | Ensures username fields gain `.touched` styling after blur for consistent feedback. |
-| `togglePassword.js` | Switches password visibility icons and input type between `password` and `text`. |
-| `formCheck.js` / `registrationAlert.js` / `loginAlert.js` | Provides alert messaging and lightweight form submission handling for the clone experience. |
-| `nextStep.js` / `openNewPage.js` | Handles client-side navigation between steps/pages without a backend. |
-
 ### License
 MIT License. See `LICENSE` for details.
 
