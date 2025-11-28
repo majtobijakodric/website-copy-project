@@ -9,9 +9,6 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Setup and Usage](#setup-and-usage)
-- [Key Scripts](#key-scripts)
-- [Styling Notes](#styling-notes)
-- [Future Improvements](#future-improvements)
 - [License](#license)
 ##
 
