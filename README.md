@@ -1,6 +1,7 @@
 ## Spotify Web Experience Clone
 
 A pixel-close recreation of Spotify's marketing splash page, login flow, and three-step account creation funnel. The project is entirely static (HTML, CSS, JavaScript) yet captures the feel of the official site, including inline validation, progressive disclosure of form steps, and contextual warnings.
+##
 
 ### Table of Contents
 - [Features](#features)
@@ -12,6 +13,7 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 - [Styling Notes](#styling-notes)
 - [Future Improvements](#future-improvements)
 - [License](#license)
+##
 
 ### Features
 - **Landing + Auth Pages** – `index.html` mirrors the public marketing hero; `sites/login.html`, `sites/registration.html`, and `sites/registration-password.html` replicate the authentication views with matching typography and spacing.
@@ -37,17 +39,19 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 
 
 ![Password + Profile Step](assets/registration-password.png)
-**Registration – Password** – Password input.
+**Registration – Password**
 
 
 ![Registration Alternate Step](assets/registration-other.png)
 **Registration – Profile Info** – Username, date of birth, and gender selection.
+##
 
 
 ### Tech Stack
 - HTML5 for structure and semantic layout
 - CSS3 (Flexbox, custom properties, animations) for styling
 - Vanilla JavaScript for form validation, alerts, and UI transitions
+##
 
 ### Project Structure
 ```
@@ -80,6 +84,7 @@ website-copy-project/
 	 ├── registration-other.png
 	 └── registration-password.png
 ```
+##
 
 ### Setup and Usage
 1. **Clone the repository**
@@ -97,6 +102,12 @@ website-copy-project/
 	- `sites/login.html` → email/password validation + password toggle
 	- `sites/registration.html` → email/username stage
 	- `sites/registration-password.html` → password coach marks → profile details → confirmation step
+##
+
+
+### Author
+Maj Tobija Kodrič
+##
 
 ### License
 MIT License. See `LICENSE` for details.
