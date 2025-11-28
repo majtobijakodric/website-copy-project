@@ -22,21 +22,12 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 
 ### Screenshots
 
-
-![Landing Page](assets/landing.png)
-**Landing Page** – Browser security banner explaining the clone is safe to visit.
-
-
 ![Login Form](assets/login.png)
-**Login Form** – Email/username and password inputs with inline warning state.
+**Login Form** – Email/username and password inputs.
 
 
 ![Registration Step](assets/registration.png)
 **Registration – Email** – Email verification step with validation hints.
-
-
-![Password + Profile Step](assets/registration-password.png)
-**Registration – Password**
 
 
 ![Registration Alternate Step](assets/registration-other.png)
