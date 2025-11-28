@@ -8,6 +8,7 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Setup and Usage](#setup-and-usage)
+- [Validation](#validation)
 - [License](#license)
 ##
 
@@ -18,7 +19,7 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 - **Progress Indicators** – A progress bar plus “Step x of y” copy guide people through the registration funnel.
 - **Responsive Layouts** – Independent stylesheets for landing, login, creation, and shared fonts keep the UI adaptable across viewports without a framework.
 - **Navigation Helpers** – Lightweight helpers route users to the next step or open supporting pages without leaving the experience.
-
+##
 ### Screenshots
 
 ![Login Form](assets/login.png)
@@ -91,6 +92,10 @@ website-copy-project/
 	- `sites/registration-password.html` → password coach marks → profile details → confirmation step
 ##
 
+### Validation
+- Login credentials are hardcoded inside `js/loginAlert.js` so the prototype can demo the alerts without a backend.
+- The first working pair is **username:** `maj` with **password:** `123`; the same arrays also accept `maj@gmail.com` as the matching email entry.
+##
 
 ### Author
 Maj Tobija Kodrič
