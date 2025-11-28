@@ -1,4 +1,4 @@
-## Spotify Web Experience Clone
+## Spotify form replica
 
 A pixel-close recreation of Spotify's marketing splash page, login flow, and three-step account creation funnel. The project is entirely static (HTML, CSS, JavaScript) yet captures the feel of the official site, including inline validation, progressive disclosure of form steps, and contextual warnings.
 ##
@@ -47,7 +47,7 @@ A pixel-close recreation of Spotify's marketing splash page, login flow, and thr
 ### Tech Stack
 - HTML5 for structure and semantic layout
 - CSS3 (Flexbox, custom properties, animations) for styling
-- Vanilla JavaScript for form validation, alerts, and UI transitions
+- Vanilla JavaScript for form validation, alerts (SweetAlert) , and UI transitions
 ##
 
 ### Project Structure
