@@ -24,6 +24,8 @@ document.querySelector("form").addEventListener("submit", function (e) {
             title: "Login successful",
             color: "white",
             confirmButtonColor: "#1DB954"
+        }).then(() => {
+            window.location.href = "https://open.spotify.com/";
         });
     } else {
         Swal.fire({
