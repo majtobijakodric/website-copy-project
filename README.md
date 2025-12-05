@@ -1,5 +1,4 @@
-# Spotify form replica
-
+<h1 align="center">Spotify form replica</h1>
 A pixel-close recreation of Spotify's marketing splash page, login flow, and three-step account creation funnel. The project is entirely static (HTML, CSS, JavaScript) yet captures the feel of the official site, including inline validation, progressive disclosure of form steps, and contextual warnings.
 
 ### Table of Contents
